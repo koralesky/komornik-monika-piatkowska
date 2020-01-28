@@ -29,10 +29,10 @@
         </div>
     </nav>
     <main>
-        <div class="container-fluid hero">
-            <div class="container">
+        <div class="container-fluid d-flex align-items-center hero">
+            <div class="container relative">
                 <div class="row">
-                    <div class="col-lg-6 col-12">
+                    <div class="col-lg-6 col-12 hero-text">
                         <div class="hero-rect"></div>
                         <p class="text-uppercase hero-name">Monika Piątkowska</p>
                         <p>Komornik Sądowy</p>
@@ -40,90 +40,110 @@
                         <p>dla Wrocławia - Krzyków</p>
                     </div>
                 </div>
+                
             </div>
+            <div class="paragraph"><span>§</span></div>
         </div>
-        <div class="conainer-fluid info-section">
-            <div class="row">
-                <div class="col-md-3 col-sm-6 col-xs-12 info-card info1">
-                    <div class="info-rect"></div>
-                    <p>Adres:</p>
-                    <p>ul. Dwa Światy 3E</p>
-                    <p>55-040 Wrocław</p>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12 info-card info2">
-                    <div class="info-rect"></div>
-                    <p>Telefon:</p>
-                    <p>71 715 10 44</p>
-                    <p>Fax:</p>
-                    <p>71 715 10 46</p>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12 info-card info3">
-                    <div class="info-rect"></div>
-                    <p>Email:</p>
-                    <p>wroclaw.piatkowska@</p>
-                    <p>komornik.pl</p>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12 info-card info4">
-                    <div class="info-rect"></div>
-                    <p>Nr rachunku bankowego:</p>
-                    <p>Bank XXX: xx xxxx xxxx</p>
-                    <p>xxxx xxxx xxxx xxxx</p>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid contact-section">
-            <div class="row justify-content-center">
-                <div class="col-12 mb-3 text-center">
-                    <h1>Kontakt</h1>
-                </div>
-                <div class="col-md-10 mb-md-0 mb-5">
-                    <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-
-                        <div class="row">
-                            <div class="col-md-6 pr-md-1">
-                                <div class="md-form mb-2">
-                                    <input type="text" id="name" name="name" class="form-control" placeholder="Imię">
-                                </div>
-                            </div>
-
-                            <div class="col-md-6 pl-md-1">
-                                <div class="md-form mb-2">
-                                    <input type="text" id="email" name="email" class="form-control" placeholder="Email">
-                                </div>
-                            </div>
+        <div class="conainer-fluid d-flex align-items-center info-section">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xs-12 info-card info1 d-flex align-items-center">
+                        <div>
+                            <div class="info-rect"></div>
+                            <p>Adres:</p>
+                            <p>ul. Dwa Światy 3E</p>
+                            <p>55-040 Wrocław</p>
                         </div>
-
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="md-form mb-2">
-                                    <input type="text" id="subject" name="subject" class="form-control"
-                                        placeholder="Temat">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="md-form">
-                                    <textarea type="text" id="message" name="message" rows="8"
-                                        class="form-control md-textarea" placeholder="Treść wiadomości"></textarea>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                    <div class="text-center text-md-right">
-                        <a class="btn btn-send px-5 mt-2"
-                            onclick="document.getElementById('contact-form').submit();">Wyślij</a>
                     </div>
-                    <div class="status"></div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 info-card info2 d-flex align-items-center">
+                        <div>
+                            <div class="info-rect"></div>
+                            <p>Telefon:</p>
+                            <p>71 715 10 44</p>
+                            <p>Fax:</p>
+                            <p>71 715 10 46</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 info-card info3 d-flex align-items-center">
+                        <div>
+                            <div class="info-rect"></div>
+                            <p>Email:</p>
+                            <p>wroclaw.piatkowska@</p>
+                            <p>komornik.pl</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 info-card info4 d-flex align-items-center">
+                        <div>
+                            <div class="info-rect"></div>
+                            <p>Nr rachunku bankowego:</p>
+                            <p>Bank XXX: xx xxxx xxxx</p>
+                            <p>xxxx xxxx xxxx xxxx</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid contact-section d-flex align-items-center">
+            <div class="container-fluid">
+            <div>
+                <div class="row justify-content-center">
+                    <div class="col-12 mb-3 text-center">
+                        <h1>Kontakt</h1>
+                    </div>
+                    <div class="col-md-10 mb-md-0 mb-5">
+                        <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                            <div class="row">
+                                <div class="col-md-6 pr-md-1">
+                                    <div class="md-form mb-2">
+                                        <input type="text" id="name" name="name" class="form-control"
+                                            placeholder="Imię">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 pl-md-1">
+                                    <div class="md-form mb-2">
+                                        <input type="text" id="email" name="email" class="form-control"
+                                            placeholder="Email">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="md-form mb-2">
+                                        <input type="text" id="subject" name="subject" class="form-control"
+                                            placeholder="Temat">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="md-form">
+                                        <textarea type="text" id="message" name="message" rows="12"
+                                            class="form-control md-textarea" placeholder="Treść wiadomości"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="text-center text-md-right">
+                            <a class="btn btn-send px-5 mt-2"
+                                onclick="document.getElementById('contact-form').submit();">Wyślij</a>
+                        </div>
+                        <div class="status"></div>
+                    </div>
+
                 </div>
 
-
             </div>
+        </div>
         </div>
 
     </main>
     <div class="conainer-fluid footer-section">
+        <div class="row justify-content-center">
+            <div class="col-10">       
         <div class="row">
             <div class="col-md-3">
                 <p class="font-weight-bold">Adres:</p class="font-weight-bold">
@@ -152,7 +172,8 @@
             <div class="col-md-6 text-md-right"><span class="light-blue">Website by</span> REMOTE <span
                     class="light-blue">& </span> KORALESKY DESIGN</div>
         </div>
-
+    </div>
+    </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>

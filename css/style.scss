@@ -30,30 +30,50 @@ nav{
 
 main{
     .hero{
-        padding:8rem 0;
+        height: 60vh;
         background-color:$beige;
-
-        .hero-rect{
-            height:3px;
-            width:4em;
-            background-color:#d7d1c9;
-            margin-bottom:1.5em;
+        z-index:-2;
+        .relative{
+            .hero-text{
+                z-index:3;
+                .hero-rect{
+                    height:3px;
+                    width:4em;
+                    background-color:#d7d1c9;
+                    margin-bottom:1.5em;
+                }
+        
+                p{
+                    font-family: $Libre;
+                    font-weight:400;
+                    font-size: 2em;
+                    color:$blue2;
+                    margin-top:.2em;
+                    margin-bottom: .2em;
+        
+                }
+                .hero-name{
+                    font-size:1.7em;
+                    font-weight:700;
+        
+                }
+            }
+            
+            
+            }
+            .paragraph{
+                position:absolute;
+                top:-20%;
+                right: 18vw;
+                overflow: hidden;
+                z-index: 0;
+                span{
+                    font-size:60rem;
+                    color:#d7d1c9;
+                    user-select: none;
+                }
         }
-
-        p{
-            font-family: $Libre;
-            font-weight:400;
-            font-size: 2em;
-            color:$blue2;
-            margin-top:.2em;
-            margin-bottom: .2em;
-
-        }
-        .hero-name{
-            font-size:1.7em;
-            font-weight:700;
-
-        }
+        
     }
 
     .info-section{
@@ -61,8 +81,11 @@ main{
         font-family: $Libre;
         color: $navwhite;
         font-size: 1.1em;
+        
+        
         .info-card{
-            padding: 2em 0;
+            z-index: 4;
+            height: 30vh;
             p{
                 margin-left: 3em;
             }
@@ -90,9 +113,10 @@ main{
     }
 
     .contact-section{
+        position: relative;
+        z-index: 3;
         background-color: $blue1;
-        padding-top: 4.5em;
-        padding-bottom:4.5em;
+        height:75vh;
         h1{
             font-family: $Libre;
             color:$navwhite;
@@ -115,6 +139,7 @@ main{
 }
 
 .footer-section{
+    z-index: 6;
     color: $navwhite;
     background-color:$blue3;
     padding: 4rem 3rem !important;
@@ -132,6 +157,26 @@ main{
     }
     .mmr{
         margin-bottom:1em;
+    }
+}
+
+@media (max-width: 500px){
+    main{
+        .hero{
+            height:100vh;
+            .paragraph{
+                visibility: hidden;
+            }
+        }
+
+        .info-section{
+            .info-card{
+                height:40vh;
+            }
+        }
+        .contact-section{
+            height:100vh;
+        }
     }
 }
 

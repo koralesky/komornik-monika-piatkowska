@@ -17,18 +17,23 @@ nav a {
 }
 
 main .hero {
-  padding: 8rem 0;
+  height: 60vh;
   background-color: #ebe8e4;
+  z-index: -2;
 }
 
-main .hero .hero-rect {
+main .hero .relative .hero-text {
+  z-index: 3;
+}
+
+main .hero .relative .hero-text .hero-rect {
   height: 3px;
   width: 4em;
   background-color: #d7d1c9;
   margin-bottom: 1.5em;
 }
 
-main .hero p {
+main .hero .relative .hero-text p {
   font-family: "Libre Baskerville", serif;
   font-weight: 400;
   font-size: 2em;
@@ -37,9 +42,26 @@ main .hero p {
   margin-bottom: .2em;
 }
 
-main .hero .hero-name {
+main .hero .relative .hero-text .hero-name {
   font-size: 1.7em;
   font-weight: 700;
+}
+
+main .hero .paragraph {
+  position: absolute;
+  top: -20%;
+  right: 18vw;
+  overflow: hidden;
+  z-index: 0;
+}
+
+main .hero .paragraph span {
+  font-size: 60rem;
+  color: #d7d1c9;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 main .info-section {
@@ -50,7 +72,8 @@ main .info-section {
 }
 
 main .info-section .info-card {
-  padding: 2em 0;
+  z-index: 4;
+  height: 30vh;
 }
 
 main .info-section .info-card p {
@@ -83,9 +106,10 @@ main .info-section .info4 {
 }
 
 main .contact-section {
+  position: relative;
+  z-index: 3;
   background-color: #073343;
-  padding-top: 4.5em;
-  padding-bottom: 4.5em;
+  height: 75vh;
 }
 
 main .contact-section h1 {
@@ -126,6 +150,7 @@ main .contact-section .btn-send {
 }
 
 .footer-section {
+  z-index: 6;
   color: #f4f5f4;
   background-color: #01425b;
   padding: 4rem 3rem !important;
@@ -148,5 +173,20 @@ main .contact-section .btn-send {
 
 .footer-section .mmr {
   margin-bottom: 1em;
+}
+
+@media (max-width: 500px) {
+  main .hero {
+    height: 100vh;
+  }
+  main .hero .paragraph {
+    visibility: hidden;
+  }
+  main .info-section .info-card {
+    height: 40vh;
+  }
+  main .contact-section {
+    height: 100vh;
+  }
 }
 /*# sourceMappingURL=style.css.map */
