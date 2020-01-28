@@ -1,0 +1,137 @@
+// IMPORTS
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700&display=swap');
+
+// VARIABLES
+$blue1: #073343;
+$blue2: #073647;
+$blue3: #01425b;
+$blue4: #014e6b;
+$navwhite: #f4f5f4;
+$beige: #ebe8e4;
+$signcolor: #d7d1c9;
+$copyrightscolor: #79c4df;
+$Libre: 'Libre Baskerville', serif;
+
+
+nav{
+    background-color: $navwhite;
+    box-shadow: 0px 1px 3px -1px rgba(0,0,0,0.75);
+    .navc{
+        padding: 1em 0;
+    }
+    a{
+        font-family: 'Calibri', sans-serif;
+        color:$blue1 !important;
+        font-weight: bold;
+        text-transform: uppercase;
+
+    }
+}
+
+main{
+    .hero{
+        padding:4rem 0;
+        background-color:$beige;
+
+        .hero-rect{
+            height:3px;
+            width:4em;
+            background-color:#d7d1c9;
+            margin-bottom:1.5em;
+        }
+
+        p{
+            font-family: $Libre;
+            font-weight:400;
+            font-size: 2em;
+            color:$blue2;
+            margin-top:.2em;
+            margin-bottom: .2em;
+
+        }
+        .hero-name{
+            font-size:1.7em;
+            font-weight:700;
+
+        }
+    }
+
+    .info-section{
+        background-color:$blue1;
+        font-family: $Libre;
+        color: $navwhite;
+        font-size: 1.1em;
+        .info-card{
+            padding: 2em 0;
+            p{
+                margin-left: 3em;
+            }
+            .info-rect{
+                margin-left: 3em;
+                height:2px;
+                width:2em;
+                background-color:#d7d1c9;
+                margin-top:1.5em;
+                margin-bottom:1.2em;
+            }
+        }
+        .info1{
+            background-color:$blue1;
+        }
+        .info2{
+            background-color: $blue2;
+        }
+        .info3{
+            background-color: $blue3;
+        }
+        .info4{
+            background-color: $blue4;
+        }
+    }
+
+    .contact-section{
+        background-color: $blue1;
+        padding-top: 4.5em;
+        padding-bottom:4.5em;
+        h1{
+            font-family: $Libre;
+            color:$navwhite;
+            font-size: 1.8em;
+        }
+        ::placeholder{
+            color:$blue1;
+            font-weight: bold;
+        }
+        input, textarea{
+            border-radius: 0;
+        }
+        .btn-send{
+            background-color:$blue4;
+            color:$navwhite;
+            font-weight:500;
+            border-radius:0;
+        }
+    }
+}
+
+.footer-section{
+    color: $navwhite;
+    background-color:$blue3;
+    padding: 4rem 3rem !important;
+    p{
+        margin:0;
+    }
+    .divider{
+        height:1px;
+        width:100%;
+        margin:3em 0;
+        background-color: #014e6b;
+    }
+    .light-blue{
+        color:$copyrightscolor;
+    }
+    .mmr{
+        margin-bottom:1em;
+    }
+}
+

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Komornik Monika Piątkowska</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">logo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+            <div class="navbar-nav navc">
+                <a class="nav-item nav-link" href="#">Informacje</a>
+                <a class="nav-item nav-link" href="#">Rewir</a>
+                <a class="nav-item nav-link" href="#">Wnioski</a>
+                <a class="nav-item nav-link" href="#">Licytacje</a>
+                <a class="nav-item nav-link" href="#">Kontakt</a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="container-fluid hero">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-12">
+                        <div class="hero-rect"></div>
+                        <p class="text-uppercase hero-name">Monika Piątkowska</p>
+                        <p>komornik sądowy</p>
+                        <p>przy sądzie rejonowym</p>
+                        <p>dla Wrocławia - Krzyków</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="conainer-fluid info-section">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12 info-card info1">
+                    <div class="info-rect"></div>
+                    <p>Adres:</p>
+                    <p>ul. Dwa Światy 3E</p>
+                    <p>55-040 Wrocław</p>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 info-card info2">
+                    <div class="info-rect"></div>
+                    <p>Telefon:</p>
+                    <p>71 715 10 44</p>
+                    <p>Fax:</p>
+                    <p>71 715 10 46</p>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 info-card info3">
+                    <div class="info-rect"></div>
+                    <p>Email:</p>
+                    <p>wroclaw.piatkowska@</p>
+                    <p>komornik.pl</p>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 info-card info4">
+                    <div class="info-rect"></div>
+                    <p>Nr rachunku bankowego:</p>
+                    <p>Bank XXX: xx xxxx xxxx</p>
+                    <p>xxxx xxxx xxxx xxxx</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid contact-section">
+            <div class="row justify-content-center">
+                <div class="col-12 mb-3 text-center">
+                    <h1>Kontakt</h1>
+                </div>
+                <div class="col-md-10 mb-md-0 mb-5">
+                    <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                        <div class="row">
+                            <div class="col-md-6 pr-md-1">
+                                <div class="md-form mb-2">
+                                    <input type="text" id="name" name="name" class="form-control" placeholder="Imię">
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 pl-md-1">
+                                <div class="md-form mb-2">
+                                    <input type="text" id="email" name="email" class="form-control" placeholder="Email">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="md-form mb-2">
+                                    <input type="text" id="subject" name="subject" class="form-control"
+                                        placeholder="Temat">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="md-form">
+                                    <textarea type="text" id="message" name="message" rows="8"
+                                        class="form-control md-textarea" placeholder="Treść wiadomości"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="text-center text-md-right">
+                        <a class="btn btn-send px-5 mt-2"
+                            onclick="document.getElementById('contact-form').submit();">Wyślij</a>
+                    </div>
+                    <div class="status"></div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </main>
+    <div class="conainer-fluid footer-section">
+        <div class="row">
+            <div class="col-md-3">
+                <p class="font-weight-bold">Adres:</p class="font-weight-bold">
+                <p>ul. Dwa Światy 3E</p>
+                <p>55-040 Wrocław</p>
+            </div>
+            <div class="col-md-3 mt-2">
+                <p class="font-weight-bold">Telefon:</p>
+                <p>71 715 10 44</p>
+                <p class="font-weight-bold">Fax:</p>
+                <p>71 715 10 46</p>
+            </div>
+            <div class="col-md-3 mt-2">
+                <p class="font-weight-bold">Email:</p>
+                <p>wroclaw.piatkowska@komornik.pl</p>
+            </div>
+            <div class="col-md-3 mt-2">
+                <p class="font-weight-bold">Nr rachunku bankowego:</p>
+                <p>Bank XXX: xx xxxx xxxx xxxx xxxx xxxx xxxx</p>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row copyrights-section justify-content-between">
+            <div class="col-md-6 mmr"><span class="light-blue">Copyright @</span> Monika Piątkowska <span
+                    class="light-blue">| NIP 00 0000 0000 0000 0000</span></div>
+            <div class="col-md-6 text-md-right"><span class="light-blue">Website by</span> REMOTE <span
+                    class="light-blue">& </span> KORALESKY DESIGN</div>
+        </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

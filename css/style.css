@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700&display=swap");
+nav {
+  background-color: #f4f5f4;
+  -webkit-box-shadow: 0px 1px 3px -1px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 1px 3px -1px rgba(0, 0, 0, 0.75);
+}
+
+nav .navc {
+  padding: 1em 0;
+}
+
+nav a {
+  font-family: 'Calibri', sans-serif;
+  color: #073343 !important;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+main .hero {
+  padding: 4rem 0;
+  background-color: #ebe8e4;
+}
+
+main .hero .hero-rect {
+  height: 3px;
+  width: 4em;
+  background-color: #d7d1c9;
+  margin-bottom: 1.5em;
+}
+
+main .hero p {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-size: 2em;
+  color: #073647;
+  margin-top: .2em;
+  margin-bottom: .2em;
+}
+
+main .hero .hero-name {
+  font-size: 1.7em;
+  font-weight: 700;
+}
+
+main .info-section {
+  background-color: #073343;
+  font-family: "Libre Baskerville", serif;
+  color: #f4f5f4;
+  font-size: 1.1em;
+}
+
+main .info-section .info-card {
+  padding: 2em 0;
+}
+
+main .info-section .info-card p {
+  margin-left: 3em;
+}
+
+main .info-section .info-card .info-rect {
+  margin-left: 3em;
+  height: 2px;
+  width: 2em;
+  background-color: #d7d1c9;
+  margin-top: 1.5em;
+  margin-bottom: 1.2em;
+}
+
+main .info-section .info1 {
+  background-color: #073343;
+}
+
+main .info-section .info2 {
+  background-color: #073647;
+}
+
+main .info-section .info3 {
+  background-color: #01425b;
+}
+
+main .info-section .info4 {
+  background-color: #014e6b;
+}
+
+main .contact-section {
+  background-color: #073343;
+  padding-top: 4.5em;
+  padding-bottom: 4.5em;
+}
+
+main .contact-section h1 {
+  font-family: "Libre Baskerville", serif;
+  color: #f4f5f4;
+  font-size: 1.8em;
+}
+
+main .contact-section ::-webkit-input-placeholder {
+  color: #073343;
+  font-weight: bold;
+}
+
+main .contact-section :-ms-input-placeholder {
+  color: #073343;
+  font-weight: bold;
+}
+
+main .contact-section ::-ms-input-placeholder {
+  color: #073343;
+  font-weight: bold;
+}
+
+main .contact-section ::placeholder {
+  color: #073343;
+  font-weight: bold;
+}
+
+main .contact-section input, main .contact-section textarea {
+  border-radius: 0;
+}
+
+main .contact-section .btn-send {
+  background-color: #014e6b;
+  color: #f4f5f4;
+  font-weight: 500;
+  border-radius: 0;
+}
+
+.footer-section {
+  color: #f4f5f4;
+  background-color: #01425b;
+  padding: 4rem 3rem !important;
+}
+
+.footer-section p {
+  margin: 0;
+}
+
+.footer-section .divider {
+  height: 1px;
+  width: 100%;
+  margin: 3em 0;
+  background-color: #014e6b;
+}
+
+.footer-section .light-blue {
+  color: #79c4df;
+}
+
+.footer-section .mmr {
+  margin-bottom: 1em;
+}
+/*# sourceMappingURL=style.css.map */
